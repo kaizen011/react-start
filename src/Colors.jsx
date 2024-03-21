@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Colors.css";
 
 const COLORS = ["pink", "green", "blue", "yellow", "purple"];
 
