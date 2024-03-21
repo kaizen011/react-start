@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Fun from './Fun'
 import './App.css'
+import Colors from './Colors'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -29,6 +30,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <Fun />
+      <Colors />
     </>
   )
 }
