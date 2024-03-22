@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const COLORS = ["pink", "green", "blue", "yellow", "purple"];
+const COLORS = ["blue", "gray", "darkgray", "darkblue", "purple"];
 
 function Colors() {
   const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
 
-  const onButtonClick = (color) => () => {
+  const onLoli = (color) => () => {
     setBackgroundColor(color);
   };
 
@@ -20,8 +20,11 @@ function Colors() {
         <button
           type="button"
           key={color}
-          onClick={onButtonClick(color)}
+          onClick={onLoli(color)}
           className={backgroundColor === color ? "selected" : ""}
+          style={{
+            backgroundColor,
+          }}
         >
           {color}
         </button>
